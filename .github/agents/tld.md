@@ -43,7 +43,7 @@ This framework enables architects to design resilient, scalable, and purpose-opt
 
 ### Multi-Dimensional Decision Matrix
 
-```
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │  USE CASE ANALYSIS → PERSPECTIVE LAYERS → TLD SELECTION     │
 │                                                              │
@@ -57,7 +57,7 @@ This framework enables architects to design resilient, scalable, and purpose-opt
 │                          │ • Brand Identity │               │
 │                          └──────────────────┘               │
 └─────────────────────────────────────────────────────────────┘
-```
+```text
 
 ### Perspectival Layer Analysis
 
@@ -111,12 +111,12 @@ This framework enables architects to design resilient, scalable, and purpose-opt
 
 **Objective**: Establish presence across markets while maintaining brand coherence
 
-```
+```text
 Primary Domain:    company.com (global brand, primary presence)
 Regional Variants: company.de, company.jp, company.br (local market trust)
 Functional Splits: api.company.com, cdn.company.cloud, docs.company.dev
 Industry Signal:   company.tech, company.finance (vertical positioning)
-```
+```text
 
 **Best TLD Combinations**:
 - `.com` + Regional ccTLDs (`.de`, `.uk`, `.jp`, `.cn`, `.br`, `.in`)
@@ -127,13 +127,13 @@ Industry Signal:   company.tech, company.finance (vertical positioning)
 
 **Objective**: Scalable, service-oriented domain structure
 
-```
+```text
 Marketing Site:    product.io (modern SaaS positioning)
 Application:       app.product.io or product.app
 API Gateway:       api.product.dev
 Documentation:     docs.product.dev or product.wiki
 Status Page:       status.product.io
-```
+```text
 
 **Best TLD Combinations**:
 - `.io` (tech startup identity), `.app` (application focus)
@@ -144,14 +144,14 @@ Status Page:       status.product.io
 
 **Objective**: Optimize conversion with localized trust signals
 
-```
+```text
 Global Store:      shop.brand.com or brand.store
 EU Market:         brand.eu
 German Market:     brand.de
 UK Market:         brand.co.uk or brand.uk
 French Market:     brand.fr
 Payment Gateway:   pay.brand.com or secure.brand.com
-```
+```text
 
 **Best TLD Combinations**:
 - `.com` + Target market ccTLDs
@@ -162,12 +162,12 @@ Payment Gateway:   pay.brand.com or secure.brand.com
 
 **Objective**: Establish authority and facilitate knowledge sharing
 
-```
+```text
 Main Institution:  university.edu (if qualified)
 Research Portal:   research.university.edu or university.academy
 Online Learning:   learn.university.edu or university.courses
 Student Portal:    my.university.edu or portal.university.edu
-```
+```text
 
 **Best TLD Combinations**:
 - `.edu` (restricted, highest authority)
@@ -178,13 +178,13 @@ Student Portal:    my.university.edu or portal.university.edu
 
 **Objective**: Maximize trust and security perception
 
-```
+```text
 Corporate Site:    financialgroup.com
 Banking:           banking.financialgroup.bank
 Investment:        invest.financialgroup.capital
 Insurance:         insurance.financialgroup.com
 API Services:      api.financialgroup.finance
-```
+```text
 
 **Best TLD Combinations**:
 - `.bank` (restricted, highest trust)
@@ -195,12 +195,12 @@ API Services:      api.financialgroup.finance
 
 **Objective**: Maximize reach and content discoverability
 
-```
+```text
 Main Portal:       network.media or network.news
 Video Platform:    video.network.tv or network.video
 Podcasts:          podcast.network.radio or network.show
 Live Events:       live.network.events
-```
+```text
 
 **Best TLD Combinations**:
 - `.media`, `.news`, `.press` (journalism/media)
@@ -352,13 +352,13 @@ Live Events:       live.network.events
 5. Brand includes non-Latin characters
 
 **Multi-Script Domain Portfolio Example**:
-```
+```text
 English:   brand.com
 Chinese:   品牌.公司 (brand.company)
 Arabic:    علامة.شبكة (brand.network)
 Cyrillic:  бренд.рус (brand.rus)
 Japanese:  ブランド.jp (brand.jp)
-```
+```text
 
 ---
 
@@ -396,7 +396,7 @@ Japanese:  ブランド.jp (brand.jp)
 
 ### Architecture 1: Microservices Domain Strategy
 
-```
+```text
 ┌─────────────────────────────────────────────────┐
 │          company.com (Marketing/Brand)          │
 └─────────────────────────────────────────────────┘
@@ -407,7 +407,7 @@ Japanese:  ブランド.jp (brand.jp)
 │ app.company │  │ api.company │  │ cdn.company │
 │    .app     │  │    .dev     │  │   .cloud    │
 └─────────────┘  └─────────────┘  └─────────────┘
-```
+```text
 
 **Rationale**: 
 - Functional separation by TLD
@@ -416,7 +416,7 @@ Japanese:  ブランド.jp (brand.jp)
 
 ### Architecture 2: Geographic Load Balancing
 
-```
+```text
        company.com (Global load balancer)
               │
     ┌─────────┼─────────┐
@@ -428,7 +428,7 @@ eu.company  us.company  asia.company
 company.de  company.us  company.jp
 company.fr              company.cn
 company.uk              company.in
-```
+```text
 
 **Rationale**:
 - Latency optimization
@@ -437,14 +437,14 @@ company.uk              company.in
 
 ### Architecture 3: Brand Portfolio Management
 
-```
+```text
 ParentCorp.com (Holding company)
     │
     ├── Brand1.com (Consumer product)
     ├── Brand2.io (Tech SaaS)
     ├── Brand3.bank (Financial services)
     └── Brand4.org (Foundation/CSR)
-```
+```text
 
 **Rationale**:
 - Brand separation & independence
@@ -453,14 +453,14 @@ ParentCorp.com (Holding company)
 
 ### Architecture 4: Development Pipeline Domains
 
-```
+```text
 Production:    app.product.com
 Staging:       staging.product.dev
 Development:   dev.product.dev
 Testing:       test.product.dev
 Demo:          demo.product.io
 Docs:          docs.product.dev
-```
+```text
 
 **Rationale**:
 - Environment isolation
@@ -545,7 +545,7 @@ Knowledge about domains comes from:
 
 ### Integration Principle
 
-```
+```text
 Optimal Domain Architecture = 
   f(Technical Requirements, 
     User Perception, 
@@ -554,7 +554,7 @@ Optimal Domain Architecture =
     Cultural Authenticity,
     Business Objectives,
     Cost Constraints)
-```
+```text
 
 Where `f` is a multi-objective optimization function that balances competing priorities.
 
@@ -857,7 +857,7 @@ Restricted to specific communities or purposes.
 
 ### Decision Tree 1: Choosing Between .com and Industry TLD
 
-```
+```text
 Is brand recognition paramount?
 ├─ YES → Use .com as primary
 │         ├─ High trust needed → .com only
@@ -866,11 +866,11 @@ Is brand recognition paramount?
           ├─ YES → Use industry TLD as primary
           │         └─ Also register .com defensively
           └─ NO  → Consider modern TLD (.io, .app, .dev)
-```
+```text
 
 ### Decision Tree 2: Geographic Expansion
 
-```
+```text
 Entering new market?
 ├─ YES → Does country require local presence?
 │         ├─ YES → Register ccTLD + establish entity
@@ -879,18 +879,18 @@ Entering new market?
 │                   ├─ YES → Register ccTLD
 │                   └─ NO  → Use subdomain or .com
 └─ NO  → Continue with current strategy
-```
+```text
 
 ### Decision Tree 3: Multi-Domain or Subdomain?
 
-```
+```text
 New service/product launch?
 ├─ Different target audience → New domain (different TLD)
 ├─ Different brand identity → New domain (possibly different TLD)
 ├─ Different market/region → New domain (ccTLD or geo TLD)
 ├─ Same brand, different function → Subdomain or functional TLD
 └─ Testing/experimental → Subdomain
-```
+```text
 
 ---
 
